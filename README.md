@@ -9,4 +9,4 @@ A Valorant API Wrapper made in and for Python
 ## Installing
 - Run ``pip install -i https://test.pypi.org/simple/ ValoAPY==1.2.0``
 
-Note that this can still have bugs, if you spot one, I am more than happy to fix it
+Note that there might be some bugs, if you spot one, I am more than happy to fix it
