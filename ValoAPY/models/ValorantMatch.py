@@ -1,4 +1,4 @@
-from typing import Optional, Literal
+from typing import Optional
 
 from .BaseApiObject import BaseApiObject
 
@@ -20,7 +20,7 @@ class ValorantMatchRound:
         self.planted_by = planted_by
         self.defused_by = defused_by
 
-    def __str__(self):
+    def __str__(self) -> str:
         defused_by = "No one" if self.defused_by is None else self.defused_by
         if self.planted_by is None:
             return f"Team {self.winning_team} won the round through killing the other team."
