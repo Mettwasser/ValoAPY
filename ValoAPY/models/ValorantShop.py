@@ -30,7 +30,7 @@ class ValorantSkin:
         self,
         name: str,
         price: int,
-        skin_id: str,
+        skin_id: str = None,
         val_dict: Literal[
             ValorantRiotPoints.EU, ValorantRiotPoints.US
         ] = ValorantRiotPoints.EU,
@@ -77,6 +77,15 @@ class ValorantSkin:
     def rl_price(self):
         """Returns the price in real life currency (€/$)"""
         return self.__get_price(self.price)
+
+    def __add__(self, other):
+        if self.__val_dict != other.__val_dict:
+            raise ValueError(
+                f"Cannot add two skins from different regions: {self.name} and {other.name}"
+            )
+        if not isinstance(other, ValorantSkin):
+            raise ValueError(f"Cannot add {type(other)} to a skin")
+        return ValorantSkin(f"{self.name} + {other.name}", self.price + other.price)
 
     def __str__(self):
         return f"{self.name}: {self.price}rp (would need to charge {self.rl_price})"
