@@ -47,6 +47,8 @@ class ValorantSkin:
                 if val_dict == ValorantRiotPoints.EU
                 else ValorantRiotPoints.US_symbol.value
             )
+        else:
+            raise ValueError(f"{val_dict} is not a valid ValorantRiotPoints region")
 
     def __criterion(self, dict_items):
         key, value, price = dict_items
