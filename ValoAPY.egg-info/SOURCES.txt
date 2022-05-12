@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ValoAPY/BaseApiObject.py
+ValoAPY/ValorantLeaderboard.py
+ValoAPY/ValorantMatch.py
+ValoAPY/ValorantPlayer.py
+ValoAPY/ValorantShop.py
+ValoAPY/__init__.py
+ValoAPY.egg-info/PKG-INFO
+ValoAPY.egg-info/SOURCES.txt
+ValoAPY.egg-info/dependency_links.txt
+ValoAPY.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ValoAPY
+Version: 1.2.0
+Summary: An API for Valorant
+Home-page: https://github.com/Mettwasser/ValoAPY
+Author: Kai Konze
+Author-email: kaicrafter2000@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ValoAPY
+A Valorant API Wrapper made in and for Python
+
+## Features
+- Access Player Data
+- Access to Skins and their prices
+- Access to Match Data and the Match's rounds
